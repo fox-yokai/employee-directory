@@ -1,16 +1,17 @@
 import React from "react";
+import { 
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
+import Home from "./pages/Home";
 import './App.css';
-import Navbar from "./components/Navbar"
-import Banner from "./components/Banner";
-import Directory from "./components/Directory"
+
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Banner />
-      <Directory />
-    </div>
+    <Router>
+      <Route path="/" component={Home} />
+    </Router>
   );
 }
 
